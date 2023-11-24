@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/piano.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/styles/app.css" />
+    <title> Piano</title>
+  </head>
+  <body>
+    <!-- keys -->
+  
+    
+   <div id="comboDisplay"></div>
+    
+    <div id="modal">
+        <div id="modalContent"></div>
+    </div>
+    
+   
+    <button class="btn" id='newButton'>New</button>
+    <div class="piano">
+      
+      <div data-note="N" class="key white">
+        <span class="info">N</span>
+      </div>
+      <div data-note="P" class="key black">
+        <span class="info">P</span>
+      </div>
+      <div data-note="M" class="key white">
+        <span class="info">M</span>
+      </div>
+      <div data-note="O" class="key black">
+        <span class="info">O</span>
+      </div>
+      <div data-note="C" class="key white">
+        <span class="info">C</span>
+      </div>
+      <div data-note="W" class="key black">
+        <span class="info">W</span>
+      </div>
+      <div data-note="D" class="key white">
+        <span class="info">D</span>
+      </div>
+      <div data-note="R" class="key black">
+        <span class="info">R</span>
+      </div>
+      <div data-note="E" class="key white">
+        <span class="info">E</span>
+      </div>
+      <div data-note="T" class="key black">
+        <span class="info">T</span>
+      </div>
+      <div data-note="F" class="key white">
+        <span class="info">F</span>
+      </div>
+      <div data-note="Y" class="key black">
+        <span class="info">Y</span>
+      </div>
+      <div data-note="G" class="key white">
+        <span class="info">G</span>
+      </div>
+      <div data-note="U" class="key black">
+        <span class="info">U</span>
+      </div>
+      <div data-note="A" class="key white">
+        <span class="info">A</span>
+      </div>
+      <div data-note="I" class="key black">
+        <span class="info">I</span>
+      </div>
+      <div data-note="B" class="key white">
+        <span class="info">B</span>
+      </div>
+    </div>
+    <!-- audio -->
+    <div>
+      <audio id="C" src="./assets/audio/040.wav"></audio>
+      <audio id="W" src="./assets/audio/041.wav"></audio>
+      <audio id="D" src="./assets/audio/042.wav"></audio>
+      <audio id="R" src="./assets/audio/043.wav"></audio>
+      <audio id="E" src="./assets/audio/044.wav"></audio>
+      <audio id="T" src="./assets/audio/045.wav"></audio>
+      <audio id="F" src="./assets/audio/046.wav"></audio>
+      <audio id="Y" src="./assets/audio/047.wav"></audio>
+      <audio id="G" src="./assets/audio/048.wav"></audio>
+      <audio id="U" src="./assets/audio/049.wav"></audio>
+      <audio id="A" src="./assets/audio/050.wav"></audio>
+      <audio id="I" src="./assets/audio/051.wav"></audio>
+      <audio id="B" src="./assets/audio/052.wav"></audio>
+      <audio id="O" src="./assets/audio/053.wav"></audio>
+      <audio id="N" src="./assets/audio/054.wav"></audio>
+      <audio id="P" src="./assets/audio/055.wav"></audio>
+      <audio id="M" src="./assets/audio/056.wav"></audio>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
