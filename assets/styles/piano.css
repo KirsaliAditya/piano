@@ -1,0 +1,129 @@
+body {
+  background-image: url('/background.png');  
+  background-size: cover; 
+  background-position: center; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+#comboDisplay {
+    font-size: 36px;
+    letter-spacing: 15px;
+    font-family: "FreeSerif", serif;
+     font-style: italic;
+    opacity: 0;
+    position:relative;
+    bottom:250px;
+    left: 450px;
+  
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+  #modal {
+      display: none;
+      position: fixed;
+      margin-top: 20;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeOut;
+  }
+@keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;} 
+} 
+
+  #modalContent {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+  }
+.piano {
+  display: flex;
+  margin-top:350px;
+  position: relative;
+  right: 100px;
+}
+.white {
+  width: 100px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: solid 1px gray;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.white:hover {
+  background-color: #eeeeee !important; 
+  transition: all 0.2s;
+}
+.white:active {
+  background-color: #d5d5d5 !important;
+  transition: all 0.2s;
+}
+.black {
+  background-color: #111;
+  width: 60px;
+  height: 200px;
+  margin: 0 -29.5px;
+  z-index: 9;
+  padding: 8px;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.black:hover {
+  background-color: #272727 !important;
+  transition: all 0.2s;
+}
+.black:active {
+  background-color: #393939 !important;
+  transition: all 0.2s;
+}
+.info {
+  display :flex;
+  justify-content: center;
+  z-index: 999;
+  margin-top: 200px;
+}
+.btn {
+    position: relative;
+    left:1100px;
+    top: 200px;
+    font-size: 16px;
+    width:100px;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: opacity: 0.15s;
+    background-color:rgb(41, 219, 136);
+    color: white;
+    border-radius: 6px;
+  
+}
+.btn:hover{
+  border: 1px solid #ff9500;
+  opacity:0.8;
+}
+.btn:active{
+  opacity 0.4;
+}
